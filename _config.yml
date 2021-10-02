@@ -3,13 +3,13 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
+title: Gentoo-docs
+subtitle: 'Welcome to the gentoo project docs'
 description: ''
 keywords:
-author: John Doe
+author: ddthien
 language: en
-timezone: ''
+timezone: 'Asia/Ho_Chi_Minh'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
@@ -97,7 +97,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: flex-block
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment

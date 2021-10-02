@@ -1,0 +1,36 @@
+<!-- footer container -->
+<footer id="footer" class="footer">
+  <div class="footer-container">
+    <% if (theme.social_icon.enable) { %>
+      <div class="social-icons">
+        <% for (var i in theme.social_icon.icons) { %>
+          <% if (theme.social_icon.icons[i]) { %>
+            <a href="<%= theme.social_icon.icons[i] %>" class="soft-size--primary soft-style--box" target="_blank"
+              rel="noopener noreferrer">
+              <%- partial("../_svg/social-"+ i +".svg") %>
+            </a>
+            <% } %>
+              <% } %>
+      </div>
+      <% } %>
+        <p>&copy; <%= date(new Date(), 'YYYY' ) %> <a href="/" target="_blank">
+              <%= config.author %>
+            </a></p>
+
+        <% if (theme.beian) { %>
+          <p><a href="" target="_blank">
+              <%= theme.beian %>
+            </a></p>
+          <% } %>
+
+            <p>Powered by <a href="ddthien-coder.github.io/gentoo-docs/" target="_blank"
+                rel="noopener noreferrer">Hexo</a> Theme - @ddthien <a href="ddthien-coder.github.io/gentoo-docs/"
+                target="_blank" rel="noopener noreferrer author">gentoo-docs</a></p>
+
+            <p>
+              <a href="javascript:;" id="theme-light">🌞 Light</a>
+              <a href="javascript:;" id="theme-dark">🌛 Night</a>
+              <a href="javascript:;" id="theme-auto">🤖️ Auto</a>
+            </p>
+  </div>
+</footer>
