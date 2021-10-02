@@ -13,7 +13,7 @@ timezone: 'Asia/Ho_Chi_Minh'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://ddthien-coder.github.io/gentoo-docs
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -102,4 +102,6 @@ theme: flex-block
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repo: https://github.com/ddthien-coder/gentoo-docs
+  branch: develop
