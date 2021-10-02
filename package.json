@@ -1,23 +1,26 @@
 {
-  "name": "gentoo-docs",
-  "version": "1.0.0",
-  "description": "A modern Jekyll theme for documentation",
-  "repository": "ddthien-coder/gentoo-docs",
-  "license": "MIT",
-  "bugs": "https://github.com/ddthien-coder/gentoo-docs/issues",
-  "devDependencies": {
-    "stylelint": "^13.7.2",
-    "@primer/css": "^15.2.0",
-    "prettier": "^2.1.2",
-    "stylelint-config-prettier": "^8.0.2",
-    "stylelint-config-primer": "^9.2.1",
-    "stylelint-prettier": "^1.1.2",
-    "stylelint-selector-no-utility": "^4.0.0"
-  },
+  "name": "hexo-site",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "stylelint '**/*.scss'",
-    "format": "prettier --write '**/*.{scss,js,json}'",
-    "stylelint-check": "stylelint-config-prettier-check"
+    "build": "hexo generate",
+    "clean": "hexo clean",
+    "deploy": "hexo deploy",
+    "server": "hexo server"
   },
-  "dependencies": {}
+  "hexo": {
+    "version": "5.4.0"
+  },
+  "dependencies": {
+    "hexo": "^5.0.0",
+    "hexo-generator-archive": "^1.0.0",
+    "hexo-generator-category": "^1.0.0",
+    "hexo-generator-index": "^2.0.0",
+    "hexo-generator-tag": "^1.0.0",
+    "hexo-renderer-ejs": "^1.0.0",
+    "hexo-renderer-marked": "^4.0.0",
+    "hexo-renderer-stylus": "^2.0.0",
+    "hexo-server": "^2.0.0",
+    "hexo-theme-landscape": "^0.0.3"
+  }
 }
